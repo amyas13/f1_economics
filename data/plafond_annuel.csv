@@ -1,0 +1,14 @@
+saison,plafond_nominal_musd,plafond_effectif_musd,nb_grands_prix,nb_sprints,taux_indexation_inflation,notes
+2014,,,19,0,,Aucun plafond - ère pré-cost cap
+2015,,,19,0,,Aucun plafond
+2016,,,21,0,,Aucun plafond
+2017,,,20,0,,Aucun plafond
+2018,,,21,0,,Aucun plafond
+2019,,,21,0,,Aucun plafond
+2020,,,17,0,,Aucun plafond - saison COVID tronquée
+2021,145,145.0,22,3,,Premier exercice du cost cap
+2022,140,145.5,22,3,3.1%,Indexation inflation G7
+2023,135,153.0,22,6,,Stabilisation nominale + 6 sprints
+2024,135,165.5,24,6,4.7%,24 GP et indexation inflation
+2025,135,170.0,24,6,,Saison de transition avant 2026
+2026,215,215.0,24,6,,Nouveau régime - inclut CapEx et 100% salaires

@@ -1,0 +1,123 @@
+saison,ecurie,nom_historique,budget_plafonne_musd,budget_total_estime_musd,prize_money_musd,source_principale,fiabilite,notes
+2014,Ferrari,Ferrari,,460,,RaceFans,FAIBLE,Estimation pré-cost cap
+2014,Mercedes,Mercedes,,270,,RaceFans,FAIBLE,Début ère hybride - montée en puissance
+2014,Red Bull,Red Bull,,280,,RaceFans,FAIBLE,Champion 2010-2013
+2014,McLaren,McLaren,,200,,RaceFans,FAIBLE,Avant partenariat Honda
+2014,Williams,Williams,,125,,RaceFans,FAIBLE,
+2014,Alpine,Lotus F1,,145,,RaceFans,FAIBLE,Lotus en difficulté financière
+2014,Aston Martin,Force India,,90,,RaceFans,FAIBLE,Racing point Force India
+2014,Kick Sauber,Sauber,,95,,Estimation,FAIBLE,
+2014,Racing Bulls,Toro Rosso,,115,,Estimation,FAIBLE,
+2014,Marussia,Marussia,,80,,Presse,FAIBLE,Equipe disparue fin 2014
+2014,Caterham,Caterham,,75,,Presse,FAIBLE,Equipe disparue fin 2014
+2015,Ferrari,Ferrari,,430,,RaceFans,FAIBLE,
+2015,Mercedes,Mercedes,,340,,RaceFans,FAIBLE,Domination débutée
+2015,Red Bull,Red Bull,,270,,RaceFans,FAIBLE,
+2015,McLaren,McLaren,,210,,RaceFans,FAIBLE,Début Honda - difficile
+2015,Williams,Williams,,125,,RaceFans,FAIBLE,
+2015,Alpine,Lotus F1,,130,,RaceFans,FAIBLE,Difficultés financières
+2015,Aston Martin,Force India,,100,,RaceFans,FAIBLE,
+2015,Kick Sauber,Sauber,,95,,Estimation,FAIBLE,
+2015,Racing Bulls,Toro Rosso,,125,,Estimation,FAIBLE,
+2015,Manor,Manor Marussia,,80,,Presse,FAIBLE,
+2016,Mercedes,Mercedes,,350,,RaceFans,FAIBLE,
+2016,Ferrari,Ferrari,,420,,RaceFans,FAIBLE,
+2016,Red Bull,Red Bull,,280,,RaceFans,FAIBLE,
+2016,McLaren,McLaren,,220,,RaceFans,FAIBLE,
+2016,Williams,Williams,,130,,RaceFans,FAIBLE,
+2016,Alpine,Renault,,150,,RaceFans,FAIBLE,Retour Renault comme constructeur
+2016,Aston Martin,Force India,,110,,RaceFans,FAIBLE,
+2016,Kick Sauber,Sauber,,85,,Estimation,FAIBLE,
+2016,Racing Bulls,Toro Rosso,,140,,Estimation,FAIBLE,
+2016,Haas,Haas,,100,,RaceFans,FAIBLE,Saison inaugurale
+2016,Manor,Manor,,80,,Presse,FAIBLE,Equipe disparue fin 2016
+2017,Mercedes,Mercedes,,370,,RaceFans,FAIBLE,
+2017,Ferrari,Ferrari,,410,,RaceFans,FAIBLE,
+2017,Red Bull,Red Bull,,310,,RaceFans,FAIBLE,
+2017,McLaren,McLaren,,220,,RaceFans,FAIBLE,
+2017,Williams,Williams,,135,,RaceFans,FAIBLE,
+2017,Alpine,Renault,,190,,RaceFans,FAIBLE,
+2017,Aston Martin,Force India,,125,,RaceFans,FAIBLE,
+2017,Kick Sauber,Sauber,,100,,Estimation,FAIBLE,
+2017,Racing Bulls,Toro Rosso,,150,,Estimation,FAIBLE,
+2017,Haas,Haas,,120,,RaceFans,FAIBLE,
+2018,Mercedes,Mercedes,,400,,RaceFans,MOYENNE,Article RaceFans détaillé 2018
+2018,Ferrari,Ferrari,,410,,RaceFans,MOYENNE,Article RaceFans détaillé 2018
+2018,Red Bull,Red Bull,,330,,RaceFans,MOYENNE,Article RaceFans détaillé 2018
+2018,McLaren,McLaren,,220,,RaceFans,MOYENNE,Article RaceFans détaillé 2018
+2018,Williams,Williams,,135,,RaceFans,MOYENNE,Article RaceFans détaillé 2018
+2018,Alpine,Renault,,195,,RaceFans,MOYENNE,Article RaceFans détaillé 2018
+2018,Aston Martin,Force India,,120,,RaceFans,MOYENNE,Article RaceFans détaillé 2018
+2018,Kick Sauber,Sauber,,135,,RaceFans,MOYENNE,
+2018,Racing Bulls,Toro Rosso,,180,,RaceFans,MOYENNE,
+2018,Haas,Haas,,130,,RaceFans,MOYENNE,
+2019,Mercedes,Mercedes,,484,,RaceFans,HAUTE,Chiffre publié RaceFans
+2019,Ferrari,Ferrari,,463,,RaceFans,HAUTE,Chiffre publié RaceFans
+2019,Red Bull,Red Bull,,445,,RaceFans,HAUTE,Chiffre publié RaceFans
+2019,McLaren,McLaren,,220,,RaceFans,MOYENNE,
+2019,Williams,Williams,,132,,RaceFans,MOYENNE,
+2019,Alpine,Renault,,272,,RaceFans,HAUTE,Plus gros budget midfield
+2019,Aston Martin,Racing Point,,145,,RaceFans,MOYENNE,Force India racheté devient Racing Point
+2019,Kick Sauber,Alfa Romeo,,135,,RaceFans,MOYENNE,Sauber sous nom Alfa Romeo
+2019,Racing Bulls,Toro Rosso,,150,,RaceFans,MOYENNE,
+2019,Haas,Haas,,145,,RaceFans,MOYENNE,
+2020,Mercedes,Mercedes,,440,,Estimation,FAIBLE,Année COVID - réductions
+2020,Ferrari,Ferrari,,410,,Estimation,FAIBLE,Année COVID
+2020,Red Bull,Red Bull,,395,,Estimation,FAIBLE,Année COVID
+2020,McLaren,McLaren,,200,,Estimation,FAIBLE,Année COVID
+2020,Williams,Williams,,115,,Estimation,FAIBLE,Vente à Dorilton Capital
+2020,Alpine,Renault,,250,,Estimation,FAIBLE,Année COVID
+2020,Aston Martin,Racing Point,,140,,Estimation,FAIBLE,
+2020,Kick Sauber,Alfa Romeo,,125,,Estimation,FAIBLE,
+2020,Racing Bulls,AlphaTauri,,145,,Estimation,FAIBLE,Toro Rosso renommé AlphaTauri
+2020,Haas,Haas,,135,,Estimation,FAIBLE,
+2021,Mercedes,Mercedes,145,295,,FIA + estimation,MOYENNE,Cost cap respecté + ~150M$ exclus
+2021,Ferrari,Ferrari,145,290,,FIA + estimation,MOYENNE,Cost cap respecté + ~145M$ exclus
+2021,Red Bull,Red Bull,147,300,,FIA,HAUTE,Dépassement mineur 1.6% - sanction 7M$ + reduction soufflerie
+2021,McLaren,McLaren,145,260,,FIA + estimation,MOYENNE,
+2021,Williams,Williams,140,200,,FIA + estimation,MOYENNE,
+2021,Alpine,Alpine,145,235,,FIA + estimation,MOYENNE,Renault renommé Alpine
+2021,Aston Martin,Aston Martin,145,235,,FIA,MOYENNE,Racing Point devient Aston Martin - infraction procédurale 450k$
+2021,Kick Sauber,Alfa Romeo,140,195,,FIA + estimation,MOYENNE,
+2021,Racing Bulls,AlphaTauri,140,200,,FIA + estimation,MOYENNE,
+2021,Haas,Haas,135,180,,FIA + estimation,MOYENNE,
+2022,Mercedes,Mercedes,145.5,295,,FIA + estimation,HAUTE,Plafond effectif avec indexation
+2022,Ferrari,Ferrari,145.5,290,,FIA + estimation,HAUTE,
+2022,Red Bull,Red Bull,140,290,,FIA,HAUTE,Pénalité soufflerie active suite breach 2021
+2022,McLaren,McLaren,145.5,260,,FIA + estimation,MOYENNE,
+2022,Williams,Williams,145.5,205,,FIA + estimation,MOYENNE,
+2022,Alpine,Alpine,145.5,240,,FIA + estimation,MOYENNE,
+2022,Aston Martin,Aston Martin,145.5,240,,FIA + estimation,MOYENNE,
+2022,Kick Sauber,Alfa Romeo,145.5,200,,FIA + estimation,MOYENNE,
+2022,Racing Bulls,AlphaTauri,145.5,205,,FIA + estimation,MOYENNE,
+2022,Haas,Haas,140,185,,FIA + estimation,MOYENNE,
+2023,Mercedes,Mercedes,153,310,,FIA + estimation,HAUTE,Plafond effectif 153M$ avec indexation
+2023,Ferrari,Ferrari,153,305,,FIA + estimation,HAUTE,
+2023,Red Bull,Red Bull,153,310,,FIA + estimation,HAUTE,Pénalité soufflerie expirée
+2023,McLaren,McLaren,153,275,,FIA + estimation,MOYENNE,
+2023,Williams,Williams,153,215,,FIA + estimation,MOYENNE,
+2023,Alpine,Alpine,153,250,,FIA + estimation,MOYENNE,
+2023,Aston Martin,Aston Martin,153,250,,FIA + estimation,MOYENNE,
+2023,Kick Sauber,Alfa Romeo,153,210,,FIA + estimation,MOYENNE,
+2023,Racing Bulls,AlphaTauri,153,215,,FIA + estimation,MOYENNE,
+2023,Haas,Haas,153,195,,FIA + estimation,MOYENNE,
+2024,Mercedes,Mercedes,165.5,325,,FIA,HAUTE,Plafond effectif avec 24 GP + 6 sprints
+2024,Ferrari,Ferrari,165.5,320,,FIA,HAUTE,
+2024,Red Bull,Red Bull,165.5,325,,FIA,HAUTE,
+2024,McLaren,McLaren,165.5,290,,FIA,HAUTE,Champion constructeurs 2024
+2024,Williams,Williams,165.5,230,,FIA,MOYENNE,
+2024,Alpine,Alpine,165.5,265,,FIA,MOYENNE,
+2024,Aston Martin,Aston Martin,165.5,265,,FIA,MOYENNE,Infraction procédurale liée retard - pas de sanction financiere
+2024,Kick Sauber,Kick Sauber,165.5,225,,FIA,MOYENNE,Alfa Romeo renommé Kick Sauber
+2024,Racing Bulls,RB,165.5,230,,FIA,MOYENNE,AlphaTauri renommé RB
+2024,Haas,Haas,165.5,210,,FIA,MOYENNE,
+2025,McLaren,McLaren,170,310,132.9,FIA + Forbes,HAUTE,Champion constructeurs - prize money confirmé
+2025,Ferrari,Ferrari,170,330,124.4,FIA + Forbes,HAUTE,
+2025,Red Bull,Red Bull,170,330,115.8,FIA + Forbes,HAUTE,
+2025,Mercedes,Mercedes,170,335,107.3,FIA + Forbes,HAUTE,
+2025,Aston Martin,Aston Martin,170,275,98.8,FIA + Forbes,HAUTE,
+2025,Williams,Williams,170,240,,FIA + estimation,MOYENNE,
+2025,Alpine,Alpine,170,275,,FIA + estimation,MOYENNE,
+2025,Racing Bulls,Racing Bulls,170,240,,FIA + estimation,MOYENNE,RB renommé Racing Bulls
+2025,Haas,Haas,170,220,,FIA + estimation,MOYENNE,
+2025,Kick Sauber,Kick Sauber,170,235,57.9,FIA + Forbes,HAUTE,Dernière saison avant Audi

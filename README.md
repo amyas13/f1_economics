@@ -1,94 +1,37 @@
-# L'économie de la performance en Formule 1
-
-Projet d'analyse de données explorant le lien entre le budget des écuries de Formule 1 et leurs résultats sportifs sur la période 2014-2024, avec un focus particulier sur l'impact du plafond budgétaire (cost cap) instauré en 2021.
-
-## Question centrale
-
-> *Dans la F1 moderne, l'argent achète-t-il vraiment la victoire, et le plafond budgétaire instauré en 2021 a-t-il changé la donne ?*
-
-## Aperçu du dashboard
+# F1 & Business : L'argent fait-il encore la loi ? (Étude 2014-2024)
 
 ![Dashboard Power BI – L'économie de la performance en F1](powerbi/dashboard.png)
 
-Le dashboard est également disponible au format interactif (`f1_economics_dashboard.pbix`) et en PDF dans le dossier `powerbi/`.
+L'objectif de ce projet, c'est de disséquer le lien entre le portefeuille des écuries et leurs points au championnat. On parle souvent de la F1 comme d'un sport d'ingénieurs, mais c'est surtout un sport de banquiers. J'ai voulu voir si le Cost Cap de 2021 avait vraiment cassé cette dynamique.
 
-## Principaux enseignements
+## Ce que les chiffres disent (2014-2024)
 
-À partir de 11 saisons analysées (2014-2024) et 109 lignes budget-écurie consolidées :
+En compilant 109 lignes de données sur 11 saisons, les conclusions sont assez flagrantes. Avant 2021, on était dans un système quasi féodal : le "Big Three" (Mercedes, Ferrari, Red Bull) claquait entre 280 et 480 M$ par an. En face, les petites écuries essayaient de survivre avec 75 M$. Résultat ? Un écart de 1 à 5 qui se reflétait exactement au classement.
 
-**1. Avant 2021, l'argent achetait largement la performance.** Les écuries du top 3 (Mercedes, Ferrari, Red Bull) dépensaient entre 280 et 484 millions de dollars par saison, contre 75 à 150 millions pour les fonds de grille. Cet écart de 1 à 5 se retrouvait directement au classement constructeurs.
+**Le tournant de 2021** : Depuis le plafond budgétaire, c'est une autre histoire. Les budgets convergent enfin (autour de 145-170 M$). Sur mon dashboard Power BI, le graphique "Budget vs Points" montre une bande verticale super étroite après 2021, alors qu'avant c'était l'anarchie totale. On a même vu une rotation au sommet (Mercedes, puis Red Bull, et McLaren en 2024) qui aurait été impensable avec les budgets illimités d'autrefois.
 
-**2. Le cost cap a resserré la dispersion budgétaire.** À partir de 2021, les budgets soumis au plafond convergent autour de 145-170 M$ pour toutes les écuries. Le visuel "Budget vs Points" montre une bande verticale beaucoup plus étroite après 2021 que sur la période 2014-2020.
+## Le "Cousu main" : ma méthodologie
 
-**3. La hiérarchie sportive devient plus mobile.** Mercedes a dominé sept saisons consécutives (2014-2020), puis Red Bull a pris le relais (2021-2023), suivi par McLaren champion en 2024. Une rotation impossible avant le cost cap.
+Pour le côté technique, j'ai dû mixer des sources assez hétérogènes :
 
-**4. Le ROI raconte une histoire différente du classement.** Sur la période complète, Mercedes affiche le meilleur rendement points/M$ (1,79), suivi de Red Bull (1,56) et Ferrari (1,17). Aston Martin (0,96) surperforme sa réputation, alors que Williams (0,61) sous-performe sur le long terme malgré son glorieux passé.
+- **Sportif** : le dataset Kaggle de Rohan Rao (une mine d'or pour les résultats de 1950 à 2024).
+- **Financier** : là, c'est devenu complexe. J'ai dû construire mon propre CSV (`budgets_ecuries.csv`) en recoupant les enquêtes de RaceFans, les rapports de conformité de la FIA et les estimations de Forbes pour 2025. Chaque ligne est annotée avec sa source et son niveau de fiabilité (HAUTE, MOYENNE, FAIBLE).
+- **Traitement** : j'ai tout scripté sous Python 3.11 avec pandas, dans le notebook `notebooks/01_exploration.ipynb`. Le plus gros défi ? L'harmonisation. Il a fallu créer une table de correspondance pour que l'algorithme comprenne que Lotus, Renault et Alpine, c'est en fait la même entité à Enstone. Idem pour Force India qui devient Aston Martin.
 
-## Méthodologie
+Le dashboard final est dans `powerbi/f1_economics_dashboard.pbix` (éditable sous Power BI Desktop), avec un export PDF dispo dans le même dossier pour ceux qui n'ont pas Power BI.
 
-### Périmètre
+## Performance et ROI (le nerf de la guerre)
 
-- 11 saisons : 2014 à 2024 (résultats sportifs)
-- Données budgétaires couvrant 2014-2025
-- 2014 marque le début de l'ère hybride (rupture technique majeure)
-- 2021 marque l'instauration du plafond budgétaire (cost cap)
+J'ai calculé une métrique de "Retour sur Investissement" (points par million dépensé). Surprise : si Mercedes domine le rendement historique (1,79), des écuries comme Aston Martin (0,96) s'en sortent mieux que ce que leur réputation suggère. À l'inverse, Williams (0,61) reste dans le dur malgré son prestige.
 
-### Sources de données
+## Quelques bémols à garder en tête
 
-**Données sportives** : dataset Kaggle *Formula 1 World Championship 1950-2024* (Rohan Rao). Couvre les résultats par course, classements constructeurs, qualifications, écuries.
+Je préfère être transparent sur les limites de l'analyse :
 
-**Données budgétaires** : dataset construit manuellement à partir de plusieurs sources :
-- Articles RaceFans *The cost of F1* (2018, 2019)
-- Rapports de compliance FIA sur le cost cap (2021-2024)
-- Forbes *Most Valuable F1 Teams* (2025)
-- Document de synthèse de recherche personnelle (`sources/budgets-f1-plafond-et-ecuries.pdf`)
+1. **Estimation vs réalité** : avant 2021, les écuries étaient des coffres-forts. Les chiffres sont donc des estimations journalistiques (notées en fiabilité "MOYENNE" ou "FAIBLE" dans mes données).
+2. **Plafond vs total** : le Cost Cap FIA ne compte pas tout. Les salaires des pilotes et le marketing sont hors budget. Mon dataset fait bien la distinction entre `budget_plafonne` et `budget_total`.
+3. **Data 2025** : j'ai déjà intégré les budgets 2025, mais sans les résultats de fin de saison côté Kaggle, ils ne sont pas encore exploités dans les visuels. Mise à jour prévue dès que l'API Ergast/Jolpica sera à jour.
 
-Chaque ligne du fichier `data/budgets_ecuries.csv` indique sa **source principale** et son **niveau de fiabilité** (HAUTE, MOYENNE, FAIBLE), pour une traçabilité complète.
+## La suite
 
-### Pipeline de traitement
-
-1. **Exploration** des 14 fichiers Kaggle dans le notebook `01_exploration.ipynb`
-2. **Filtrage temporel** : restriction à la période 2014+
-3. **Calcul des classements finaux** : agrégation des `constructor_standings` par dernière course de chaque saison
-4. **Harmonisation des noms d'écuries** : table de correspondance pour gérer les changements de nom (Lotus → Renault → Alpine, Force India → Racing Point → Aston Martin, etc.)
-5. **Jointure budget × résultats** sur la clé (saison, écurie)
-6. **Calcul des métriques dérivées** : ROI (points par M$), flag de période (pré/post cost cap)
-7. **Export du dataset analytique** consommé par Power BI
-
-## Structure du projet
-
-Le projet est organisé en quatre dossiers. `data/` contient à la fois les fichiers Kaggle bruts, le dataset budgets construit manuellement (`budgets_ecuries.csv`) et le dataset analytique final consommé par Power BI (`dataset_analytique.csv`). Le notebook Python `notebooks/01_exploration.ipynb` documente tout le pipeline ETL. Le dashboard est dans `powerbi/` (fichier `.pbix` éditable + export PDF). Les sources documentaires (rapports FIA, synthèse de recherche) sont dans `sources/`.
-
-## Technologies utilisées
-
-- **Python 3.11** avec pandas pour l'ETL et l'exploration
-- **JupyterLab** pour les notebooks
-- **Power BI Desktop** pour la visualisation et le dashboard final
-- **Git / GitHub** pour le versioning et la publication
-
-## Avertissements méthodologiques
-
-Trois limites importantes à connaître en lisant ce projet.
-
-**Fiabilité des budgets pré-2021.** Avant le cost cap, les écuries ne publiaient pas leurs comptes. Toutes les valeurs antérieures à 2021 sont des estimations journalistiques (RaceFans principalement). La colonne `fiabilite` du fichier budgets indique le niveau de confiance de chaque ligne.
-
-**Distinction budget plafonné vs budget total.** Depuis 2021, la FIA limite seulement certaines catégories de dépenses. Le budget total inclut les salaires des pilotes, les salaires des trois dirigeants les mieux payés, le marketing et les déplacements, qui ne sont pas plafonnés. Le dataset distingue explicitement les deux notions (`budget_plafonne_musd` et `budget_total_estime_musd`).
-
-**Couverture temporelle asymétrique.** Le dataset Kaggle des résultats sportifs s'arrête à la fin 2024. Les données budgétaires 2025 sont présentes dans `budgets_ecuries.csv` mais ne sont pas exploitées dans le dashboard final faute de résultats sportifs correspondants. Une mise à jour avec l'API Ergast/Jolpica est prévue.
-
-## Continuité des écuries
-
-Plusieurs écuries ont changé de nom suite à des rachats. Le dataset utilise le **nom canonique actuel** dans la colonne `ecurie`, et conserve le **nom historique** dans la colonne `nom_historique` pour traçabilité.
-
-| Nom actuel | Historique |
-|---|---|
-| Alpine | Lotus F1 (2014-2015) → Renault (2016-2020) → Alpine (2021+) |
-| Aston Martin | Force India (2014-2018) → Racing Point (2018-2020) → Aston Martin (2021+) |
-| Racing Bulls | Toro Rosso (2014-2019) → AlphaTauri (2020-2023) → RB (2024) → Racing Bulls (2025) |
-| Kick Sauber | Sauber (2014-2018) → Alfa Romeo (2019-2023) → Kick Sauber (2024-2025) |
-
-## À propos
-
-Projet portfolio réalisé dans le cadre de ma formation en Data Analyse. Premier projet d'une série visant à démontrer la maîtrise du cycle complet d'un projet data : cadrage business, collecte de sources hétérogènes, ETL Python, modélisation et restitution Power BI.
-
-**Prochain projet** : application de techniques de Machine Learning à la prédiction des résultats de Formule 1.
+C'est le premier projet d'une série. Le prochain sur la grille : appliquer du Machine Learning à la prédiction des résultats F1 (qualifs et courses).
